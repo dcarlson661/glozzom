@@ -187,6 +187,49 @@
       </div>
     </section>
 
+    <!-- testimonials -->
+    <section id="testimonials" class="p-4 bg-dark text-white">
+      <div class="container">
+        <h2 class="text-center">Testimonials</h2>
+        <div class="row text-center">
+          <div class="col">
+            <div class="slider">
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quo, aspernatur.
+                  </p>
+                  <footer class="blockquote-footer">John Doe From</footer>
+                  <cite title="Company 1"></cite>
+                </blockquote>
+              </div>
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quo, aspernatur.
+                  </p>
+                  <footer class="blockquote-footer">Jane Doe From</footer>
+                  <cite title="Company 2"></cite>
+                </blockquote>
+              </div>
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quo, aspernatur.
+                  </p>
+                  <footer class="blockquote-footer">Sally Doe From</footer>
+                  <cite title="Company 3"></cite>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--footer-->
     <footer id="main-footer" class="text-center p-4">
       <div class="container">
@@ -218,6 +261,12 @@
     <script>
       //Get the current year for the copyright
       $("#year").text(new Date().getFullYear());
+
+      $(".slider").slick({
+        infinate: true,
+        slideToShow: 1,
+        slideToScroll: 1,
+      });
 
       function resizeWin() {
         myWindow.resizeTo(400, 600);
